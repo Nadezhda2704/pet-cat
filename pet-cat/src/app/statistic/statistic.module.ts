@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { StatisticRoutingModule } from './statistic-routing.module';
 import { StatisticComponent } from './statistic/statistic.component';
+import {NgChartsModule} from "ng2-charts";
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { StatisticComponent } from './statistic/statistic.component';
   ],
   imports: [
     CommonModule,
-    StatisticRoutingModule
+    StatisticRoutingModule,
+    NgChartsModule
   ]
 })
 export class StatisticModule { }

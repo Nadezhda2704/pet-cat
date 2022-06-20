@@ -1,1 +1,9 @@
-<p>statistic works!</p>
+<div class="chart">
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend"
+            [type]="'bar'">
+    </canvas>
+</div>
