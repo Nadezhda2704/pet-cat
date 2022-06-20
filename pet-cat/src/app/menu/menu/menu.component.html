@@ -1,0 +1,11 @@
+<div class="menu">
+  <div *ngFor="let item of itemsMenu"
+       [routerLink]="item.link"
+       [class.menu--item_disabled]="item.disabled"
+       routerLinkActive="menu--item_active"
+       class="menu--item"
+  >
+
+    <div class="menu--text">{{item.title}}</div>
+  </div>
+</div>
