@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './statistic.component.html',
   styleUrls: ['./statistic.component.scss']
 })
-export class StatisticComponent implements OnInit {
+export class StatisticComponent {
 
   public barChartLabels = ['1 месяц', '2-3 месяц', '4-12 месяц', 'от года'];
   public barChartLegend = true;
@@ -18,8 +18,5 @@ export class StatisticComponent implements OnInit {
   ];
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
