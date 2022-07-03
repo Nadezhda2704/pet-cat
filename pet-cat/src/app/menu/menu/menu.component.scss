@@ -11,6 +11,7 @@
   user-select: none;
 
   &--item {
+    position: relative;
     padding: 6px 8px;
     display: flex;
     flex-direction: column;
@@ -18,8 +19,41 @@
     cursor: pointer;
     margin-bottom: 14px;
 
+    &:hover {
+      &:before,
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:before {
+      content: '^.';
+      left: 10px;
+      top: -14px;
+      font-size: 20px;
+      position: absolute;
+      display: block;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    &:after {
+      content: '^';
+      left: 28px;
+      top: -14px;
+      font-size: 20px;
+      position: absolute;
+      display: block;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
     &_active {
-      background-color: bisque;
+      &:before,
+      &:after {
+        opacity: 1;
+      }
+      //background-color: bisque;
     }
   }
 
