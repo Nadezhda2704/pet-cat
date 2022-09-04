@@ -14,6 +14,11 @@ export class MenuComponent {
       disabled: true
     },
     {
+      link: '/draw',
+      title: 'Рисуем котика',
+      disabled: true
+    },
+    {
       link: '/statistic',
       title: 'Статистика',
       disabled: true
